@@ -18,3 +18,4 @@ def plot(h_t_loss,h_t_acc,h_v_loss,h_v_acc):
     plt.grid(True)
     plt.tight_layout()
     plt.show()
+#completed

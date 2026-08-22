@@ -27,3 +27,4 @@ def decoder(x, skip_connections, saved_tools=None, num_classes=17):
             x = blend_layer(concat_x)
         predictions = saved_tools['final'](x)
     return predictions, saved_tools
+#completed

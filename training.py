@@ -139,3 +139,4 @@ def training_model(train_dataset,validation_dataset):
     }, model_save_path)
     print(f"Success! Model weights saved to {model_save_path}")
     return h_t_accuracy,h_t_loss,h_v_accuracy,h_v_loss
+#completed

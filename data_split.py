@@ -19,3 +19,4 @@ def split(img,mask,patch_size=32):
         mask_patches = torch.stack(mask_list)
         mask_patches = mask_patches.long()
         return image_patches, mask_patches
+#completed

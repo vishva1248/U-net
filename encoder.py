@@ -22,3 +22,4 @@ def encoder(pad_image,device,saved_tools=None):
             skip_connections.append(x)
             x = pool(x)
     return x, skip_connections, saved_tools
+#completed

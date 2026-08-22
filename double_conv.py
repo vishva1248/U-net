@@ -8,3 +8,4 @@ def double_conv(in_channel,out_channel):
         nn.ReLU(inplace=True),
         nn.BatchNorm2d(out_channel)
     )
+#completed
