@@ -10,7 +10,7 @@ from testing import testing
 from encoder import encoder
 from decoder import decoder
 def reconstruct_full_prediction(image_patches, mask_patches, original_image_shape):
-    answer = input("type yes to reconstruct full prediction:- ")
+    answer = input("type yes to reconstruct full prediction:- ").lower().strip()
     if answer == "yes":
         """
             Run the trained U-Net on all 25 patches and reconstruct
