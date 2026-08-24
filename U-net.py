@@ -12,10 +12,8 @@ from decoder import decoder
 def reconstruct_full_prediction(image_patches, mask_patches, original_image_shape):
     answer = input("type yes to reconstruct full prediction:- ").lower().strip()
     if answer == "yes":
-        """
-            Run the trained U-Net on all 25 patches and reconstruct
-            the complete predicted segmentation mask.
-            """
+        """Run the trained U-Net on all 25 patches and reconstruct
+        the complete predicted segmentation mask."""
         device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
         print("\n-----FULL IMAGE RECONSTRUCTION-----")
         print(f"-----Reconstruction on device: {device}-----")

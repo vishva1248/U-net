@@ -71,4 +71,11 @@ def testing(test_dataset):
     print("-----TESTING RESULTS-----")
     print(f"Test Loss : {test_loss:.4f}|Test Accuracy : {test_accuracy:.2f}%")
     print("-----TESTING COMPLETE------")
+    return (
+        test_loss,
+        test_accuracy,
+        visual_image,
+        visual_mask,
+        visual_prediction
+    )
 #completed

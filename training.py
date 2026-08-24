@@ -1,4 +1,5 @@
 import matplotlib.pyplot as plt
+import numpy as np
 import torch
 import torch.nn as nn
 import torch.optim as optim
@@ -138,5 +139,12 @@ def training_model(train_dataset,validation_dataset):
         'decoder_state': decoder_memory.state_dict()
     }, model_save_path)
     print(f"Success! Model weights saved to {model_save_path}")
+    np.savez(
+        "training_history.npz",
+        training_accuracy=np.array(h_t_accuracy),
+        training_loss=np.array(h_t_loss),
+        validation_accuracy=np.array(h_v_accuracy),
+        validation_loss=np.array(h_v_loss)
+    )
     return h_t_accuracy,h_t_loss,h_v_accuracy,h_v_loss
 #completed
